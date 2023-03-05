@@ -11,13 +11,13 @@ public class main {
         System.out.println("Добро пожаловать в программу калькулятор");
         System.out.println("Вам доступны простые математические операции + - * / ");
 
-        System.out.printf("Введите первое число");
+        System.out.printf("Введите первое число: ");
         double a = iSсanner.nextLong();
 
         System.out.printf("Введите символ оператора +, -, *, или /: " );
         char operator = iSсanner.next().charAt(0);
 
-        System.out.printf("Введите второе число : ");
+        System.out.printf("Введите второе число: ");
         double b = iSсanner.nextLong();
 
         System.out.println("результат операции : " + result(a, b, operator));
