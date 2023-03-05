@@ -39,6 +39,8 @@ public class main {
             case '/':
                 res = a / b;
                 break;
+            default:
+                System.out.printf("Вы ошиблись при вводе оператора!  " );
         }
         return res;
     }
