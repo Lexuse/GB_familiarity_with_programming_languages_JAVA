@@ -33,6 +33,6 @@ public class main {
 
         System.out.println("Результирующая строка:  ");
         System.out.println(resultString);
-
+        iScanner.close();
     }
 }
