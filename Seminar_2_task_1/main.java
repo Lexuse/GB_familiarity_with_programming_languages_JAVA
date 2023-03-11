@@ -27,7 +27,7 @@ public class main {
             return;
         }
         StringBuilder resultString = new StringBuilder();
-        for (int i = 0; i < n/2; i++) { //так как символы вводятся по 2 то нам не нуджна полная длина n
+        for (int i = 0; i < n/2; i++) { //так как символы вводятся по 2 то нам не нужна полная длина n
             resultString = resultString.append(c1 + c2);
         }
 
