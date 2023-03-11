@@ -13,17 +13,21 @@ public class main {
         String text = "TEST";
         StringBuilder string = new StringBuilder();
         string.append(text.repeat(100));
-        Writer(text);
+        try {
+            Writer(text);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-         public static void Writer(String text) {
+         public static void Writer(String text) throws IOException{
              try (FileWriter fw = new FileWriter("file.txt", false)) {
                  for (int i = 0; i < 100; i++) {
                      fw.write(text + '\n');
                  }
                  fw.flush();
-             } catch (IOException ex) {
-                 System.out.println(ex.getMessage());
+             } catch (IOException e) {
+                 throw new IOException(e.getMessage());
              }
          }
 
