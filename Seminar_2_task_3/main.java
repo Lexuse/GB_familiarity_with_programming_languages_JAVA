@@ -13,10 +13,9 @@ public class main {
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите строку для проверки ее на палиндром. Как пример слово \"шалаш\" : ");
         String userText = iScanner.nextLine();
-        System.out.println(userText);
 
         if (CheckPalindrom(userText)){
-            System.out.println("Строка является палиндромом");
+            System.out.println(userText + "  - является палиндромом");
         }
         else
             System.out.println("Строка не палиндром!");
@@ -24,7 +23,7 @@ public class main {
     }
 
         public static boolean CheckPalindrom(String string){
-            String x = string.replace(" ", ""); //убираем все пробелы из строки
+            String x = string.replace(" ", "").toLowerCase(); //убираем все пробелы из строки
             char[] userTextChar = x.toCharArray();
             for (int i = 0; i < x.length()/2; i++) {
                 if (userTextChar[i] == userTextChar[userTextChar.length - i -1])
