@@ -52,7 +52,7 @@ public class main {
                 break;
             case '/':
                 res = a / b;
-                logger.info("Выполнена операция днлнния");
+                logger.info("Выполнена операция деления");
                 break;
             default:
                 System.out.printf("Вы ошиблись при вводе оператора!  " );
