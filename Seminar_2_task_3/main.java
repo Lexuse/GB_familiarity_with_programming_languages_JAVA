@@ -26,7 +26,7 @@ public class main {
             String x = string.replace(" ", "").toLowerCase(); //убираем все пробелы из строки
             char[] userTextChar = x.toCharArray();
             for (int i = 0; i < x.length()/2; i++) {
-                if (userTextChar[i] != userTextChar[userTextChar.length - i -1]) return false;return false;
+                if (userTextChar[i] != userTextChar[userTextChar.length - i -1]) return false;
             }
             return true;
         }
