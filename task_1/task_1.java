@@ -10,7 +10,7 @@ public class task_1 {
         Scanner iscanner = new Scanner(System.in);
 
         int from = 1;
-        System.out.printf("Введите число: ");
+        System.out.print("Введите число: ");
         int to = iscanner.nextInt();
 
         System.out.println("Сумма чисел от 1го до " + to + " равна: " + sumInRange(from, to));
