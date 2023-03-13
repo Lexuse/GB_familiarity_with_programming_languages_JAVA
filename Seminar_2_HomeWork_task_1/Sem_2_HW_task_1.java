@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class Sem_2_HW_task_1 {
     public static void main(String[] args) {
-        Map<String, String> params = new HashMap<String, String>();
+        Map<String, String> params = new HashMap<>();
         params.put("name", "Ivanov");
         params.put("country", "Russia");
         params.put("city", "Moscow");
@@ -24,7 +24,7 @@ public class Sem_2_HW_task_1 {
         StringBuilder string = new StringBuilder();
         for (Map.Entry<String, String> pair : params.entrySet()){
             if(pair.getValue() != null){
-                string.append(pair.getKey() +" = '" + pair.getValue() + "' and ");
+                string.append(pair.getKey()).append(" = '").append(pair.getValue()).append("' and ");
             }
         }
         string.delete(string.toString().length()-5,string.toString().length()); //удалить из вывода последнее "and"
