@@ -7,7 +7,7 @@ import java.util.Scanner;
     например: вход aaaabbbcdd
     выход: a4b3c1d2
  */
-public class main {
+public class Sem_2_task_2 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner (System.in);
         StringBuilder resultString = new StringBuilder();

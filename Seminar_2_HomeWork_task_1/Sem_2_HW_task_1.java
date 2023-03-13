@@ -1,9 +1,7 @@
 package Seminar_2_HomeWork_task_1;
 
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.SplittableRandom;
 
 /*
     Дана строка sql-запроса "select * from students where ". Сформируйте часть WHERE этого запроса,
@@ -11,7 +9,7 @@ import java.util.SplittableRandom;
     Если значение null, то параметр не должен попадать в запрос.
     Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
  */
-public class main {
+public class Sem_2_HW_task_1 {
     public static void main(String[] args) {
         Map<String, String> params = new HashMap<String, String>();
         params.put("name", "Ivanov");

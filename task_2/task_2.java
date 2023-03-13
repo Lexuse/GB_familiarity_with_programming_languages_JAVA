@@ -5,7 +5,7 @@ package task_2;
  */
 
 
-public class main {
+public class task_2 {
     public static void main(String[] args) {
         for (int i = 2; i < 1000; ++i) {
             int count = 0;

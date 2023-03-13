@@ -8,7 +8,7 @@ package Seminar_2_task_3;
 
 import java.util.Scanner;
 
-public class main {
+public class Sem_2_task_3 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите строку для проверки ее на палиндром. Как пример слово \"шалаш\" : ");

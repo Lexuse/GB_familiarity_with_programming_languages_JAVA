@@ -8,7 +8,7 @@ import java.util.Scanner;
     Написать метод, который вернет строку длины N, которая
     сотоит из чередующихся символов C1 и C2, начиная с C1
  */
-public class main {
+public class Sem_2_task_1 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
         System.out.println("Введите положительное число больше 0");

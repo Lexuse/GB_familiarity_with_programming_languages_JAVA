@@ -8,7 +8,7 @@ package Seminar_2_task_4;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class main {
+public class Sem_2_task_4 {
     public static void main(String[] args) {
         String text = "TEST";
         StringBuilder string = new StringBuilder();

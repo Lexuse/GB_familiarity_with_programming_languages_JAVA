@@ -12,7 +12,7 @@ package Seminar_2_HomeWork_task_3;
     Студент Краснов получил 5 по предмету Физика.
  */
 
-public class main {
+public class Sem_2_HW_task_3 {
     public static void main(String[] args) throws Exception {
 
         String [] arrayData =  datawork.ReadLineFromFile("DataFor_Seminar_2_HomeWork_task_3.txt");

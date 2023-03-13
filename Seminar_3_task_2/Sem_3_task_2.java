@@ -9,7 +9,7 @@ package Seminar_3_task_2;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class main {
+public class Sem_3_task_2 {
     public static void main(String[] args) {
         String planets = "Меркурий, Венера, Земля, Марс, Юпитер, Сатурн, Уран, Нептун, Плутон, Земля, Нептун, Нептун";
         String[] words = planets.split(", "); //Уберем запятые и создадим массив слов

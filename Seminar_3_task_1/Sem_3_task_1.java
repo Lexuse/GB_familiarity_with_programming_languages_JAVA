@@ -5,7 +5,7 @@ import java.util.*;
 /*
     Заполнить список десятью случайными числами. Отсортировать список методом sort() и вывести его на экран.
  */
-public class main {
+public class Sem_3_task_1 {
     public static void main(String[] args) {
         List<Integer> numList = new ArrayList<>(10);
         FillList(numList);

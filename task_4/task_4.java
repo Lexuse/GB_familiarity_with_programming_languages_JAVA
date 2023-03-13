@@ -5,7 +5,7 @@ package task_4;
  * например 2? + ?5 = 69.  * Требуется восстановить выражение до верного равенства.
  * Предложить хотя бы одно решение или сообщить, что его нет.
  */
-public class main {
+public class task_4 {
     public static void main(String[] args) {
         int count = 0;
         for (int i = 0; i < 10; i++) {

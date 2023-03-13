@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
   Вычислить [n-ое треугольного число](сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
  */
-public class main {
+public class task_1 {
 
     public static void main(String[] args) {
         Scanner iscanner = new Scanner(System.in);
