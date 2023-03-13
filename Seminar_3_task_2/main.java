@@ -14,9 +14,11 @@ public class main {
         String[] words = planets.split(", "); //Уберем запятые и создадим массив слов
         List<String>  listPlanets= new ArrayList<>(); //Создаем экземпляр коллекции List
 
-        for (int i = 0; i < words.length; i++) { //Заполним коллекцию словами из массива
-            listPlanets.add(words[i]);
-        }
+        Collections.addAll(listPlanets, words); //Заполним коллекцию словами из массива не применяя for
+// Для демонстрации оставлю закомиченный код как альтернативу.
+//        for (int i = 0; i < words.length; i++) {
+//            listPlanets.add(words[i]);
+//        }
 /*
     Воспользуемся тем, что в коллекции Set могут находится только уникальные элементы,
     чтобы избавиться от повторяющихся элементов. Далее посчитаем количество вхождений с помощью
