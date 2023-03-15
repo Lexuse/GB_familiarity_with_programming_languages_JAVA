@@ -26,7 +26,7 @@ public class Seminar_4_task_1 {
         String[] words = userInput.split("~");
         int indexPosition =  Integer.parseInt(words[1]);
 
-        for (int i = 0; i < indexPosition + 2; i++) {
+        for (int i = 0; i < indexPosition; i++) {
             linkedList.add(null);
         }
         linkedList.add(indexPosition, words[0]);
