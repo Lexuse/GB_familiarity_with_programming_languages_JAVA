@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class Seminar_4_HW_task_3 {
     public static void main(String[] args) {
-        System.out.println("Добро пожаловать в программу калькулятор \nВам доступны простые математические операции + - * / с ЦЕЛЫМИ числами  \nДля завершения программы введите exit");
+        System.out.println("Добро пожаловать в программу калькулятор \nВам доступны простые математические операции + - * / с ЦЕЛЫМИ числами. Не пытайтесь делить на ноль :)  \nДля завершения программы введите exit");
         Scanner iScanner = new Scanner(System.in);
         Deque<Integer> listInt = new LinkedList<>();
         Deque<String> listString = new LinkedList<>();
