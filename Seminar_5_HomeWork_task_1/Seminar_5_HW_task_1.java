@@ -39,8 +39,6 @@ public class Seminar_5_HW_task_1 {
                 }
             }
         }
-
-        //restart(bookMap);;
     }
     public static void restart (Map<String, String> map)
     {
@@ -58,7 +56,6 @@ public class Seminar_5_HW_task_1 {
         for (int i = 1; i < wordsToSplit.length; i++) {
             phoneToString += " " + (wordsToSplit[i] + ";");
         }
-        //iScanner.close();
         map.put(fio, phoneToString);
         restart(map);
     }
@@ -75,9 +72,7 @@ public class Seminar_5_HW_task_1 {
                 System.out.println("Книга абосолютна пуста. Сначала добавьте данные");
             }
             restart(map);
-        }
-
-
+         }
     }
 
 
