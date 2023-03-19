@@ -20,7 +20,7 @@ public class Seminar_5_HW_task_3 {
         int n = arr.length;
         // Построение кучи (перегруппируем массив)
         for (int i = n / 2 - 1; i >= 0; i--)
-            heapify(arr, n, i);
+            HeapSort(arr, n, i);
         // Один за другим извлекаем элементы из кучи
         for (int i=n-1; i>=0; i--)
         {
@@ -28,14 +28,14 @@ public class Seminar_5_HW_task_3 {
             int temp = arr[0];
             arr[0] = arr[i];
             arr[i] = temp;
-            // Вызываем процедуру heapify на уменьшенной куче
-            heapify(arr, i, 0);
+            // Вызываем процедуру HeapSort на уменьшенной куче
+            HeapSort(arr, i, 0);
         }
     }
 
     // Процедура для преобразования в двоичную кучу поддерева с корневым узлом i, что является
     // индексом в arr[]. n - размер кучи
-    void heapify(int[] arr, int n, int i)
+    void HeapSort(int[] arr, int n, int i)
     {
         int largest = i; // Инициализируем наибольший элемент как корень
         int l = 2*i + 1; // левый = 2*i + 1
@@ -56,7 +56,7 @@ public class Seminar_5_HW_task_3 {
             arr[largest] = swap;
 
             // Рекурсивно преобразуем в двоичную кучу затронутое поддерево
-            heapify(arr, n, largest);
+            HeapSort(arr, n, largest);
         }
     }
 
