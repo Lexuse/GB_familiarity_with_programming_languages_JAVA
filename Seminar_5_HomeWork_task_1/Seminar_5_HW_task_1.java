@@ -30,7 +30,7 @@ public class Seminar_5_HW_task_1 {
         while (!isQuit) {
             byte function = iScanner.nextByte();
             switch (function) {
-                case 1 -> AddData(map); //userData);
+                case 1 -> AddData(map);
                 case 2 -> PrintBook(map);
                 case 3 ->isQuit = true;
                 default -> {
@@ -42,11 +42,12 @@ public class Seminar_5_HW_task_1 {
 
         //restart(bookMap);;
     }
-    public static void restart (Map<String, String> map) {
+    public static void restart (Map<String, String> map)
+    {
         menu(1, map);
     }
 
-    public static void AddData (Map<String, String> map) {        //String userData){
+    public static void AddData (Map<String, String> map) {
         Scanner iScanner = new Scanner(in);
         System.out.println("Вы находитесь в режиме добавления данных в книгу. Для выхода в меню напишите exit \nВведите Имя абонента и его телефоны через запятую:");
         String input = iScanner.nextLine();
