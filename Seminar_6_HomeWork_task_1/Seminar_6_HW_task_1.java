@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Seminar_6_HW_task_1 {
     static int setLaptomSize = 10;
     static Scanner iScanner = new Scanner(System.in);
-    Map<String, String> mapString = new HashMap<>();
-    Map<String, Integer> mapInt = new HashMap<>();
-    Map<String, Float> mapFloat = new HashMap<>();
+    static Map<String, String> mapString = new HashMap<>();
+    static Map<String, Integer> mapInt = new HashMap<>();
+    static Map<String, Float> mapFloat = new HashMap<>();
     static Laptop[] laptops = new Laptop[setLaptomSize];
 
 
@@ -88,10 +88,26 @@ public class Seminar_6_HW_task_1 {
 
     public static void cpuChoise(){
         System.out.println("Выберите один из вариантов установленного процессора");
-        for (int i = 0; i < Laptop_generator.cpu.length; i++) {
-            System.out.println(i + ":" + Laptop_generator.cpu[i]);
-            byte choise = iScanner.nextByte();
+        byte choise = 0;
+        String cpu = "cpu";
+        for (int i = 0; i < Laptop_generator.cpu.length; i++) System.out.println(i + ":" + Laptop_generator.cpu[i]);
+        try {
+            choise = Byte.parseByte(iScanner.next());
         }
-        String cpu;
+        catch (Exception e){
+            System.out.println("Пункты меню представлены числами а не символами!");
+            cpuChoise();
+        }
+
+        if(choise == 0 || choise == 1 || choise == 2) {
+            mapString.put(cpu, Laptop_generator.cpu[choise]);
+        }
+        else {
+            System.out.println("Вы ввели несуществующий пункт выбора");
+            cpuChoise();
+        }
+        for (Object entry: mapString.entrySet()) {
+            System.out.println(entry);
+        }
     }
 }
