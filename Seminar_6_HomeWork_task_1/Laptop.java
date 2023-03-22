@@ -1,6 +1,9 @@
 package Seminar_6_HomeWork_task_1;
 
+import java.util.SplittableRandom;
+
 public class Laptop {
+    private int model;
     private String cpu;
     private float frequency;
     private  int core;
@@ -12,7 +15,8 @@ public class Laptop {
     private String materials;
     private float weight;
 
-    public Laptop(String cpu, float frequency, int core, int ram, String videCard, int hdd,  String screen, String os, String materials, float weight){
+    public Laptop(int model ,String cpu, float frequency, int core, int ram, String videCard, int hdd,  String screen, String os, String materials, float weight){
+        this.model = model;
         this.cpu = cpu;
         this.frequency = frequency;
         this.core = core;
@@ -27,6 +31,7 @@ public class Laptop {
     public String info() {
         return
                 "Laptop:\n" +
+                "  Model: " + model + "\n" +
                 "  cpu: " + cpu + "\n" +
                 "  frequency: " + frequency +"MHz\n" +
                 "  cores: " + core + "\n" +

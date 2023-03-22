@@ -10,6 +10,7 @@ public class Laptop_generator {
         System.out.println(exemplyar.info());
     }
 
+    static private int model;
     static private String[] cpu = new String[] {"INTEL", "AMD", "APPLE" };
     static private float[] frequency = new float[] {3.3f, 3.5f, 4.5f };
     static private int[] core = new int[] {4, 6, 12};
@@ -22,6 +23,7 @@ public class Laptop_generator {
     static private float[] weight = new float[] {1.2f, 2.1f, 3.6f};
 
     public static Laptop createLaptop (){
+        int model0 = generateModel();
         String cpuO = cpu[randGen()];
         float frequencyO = frequency[randGen()];
         int coreO = core[randGen()];
@@ -32,12 +34,17 @@ public class Laptop_generator {
         String osO = os[randGen()];
         String materialsO = materials[randGen()];
         float weightO = weight[randGen()];
-        Laptop exempLaptop = new Laptop(cpuO,frequencyO,coreO,ramO,videCardO,hddO,screenO,osO,materialsO,weightO);
+        Laptop exempLaptop = new Laptop(model0, cpuO,frequencyO,coreO,ramO,videCardO,hddO,screenO,osO,materialsO,weightO);
         return exempLaptop;
     }
 
     public static int randGen(){
         int result = new Random().nextInt(0,2);
+        return result;
+    }
+
+    public  static int generateModel(){
+        int result = new Random().nextInt(10001,19999);;
         return result;
     }
 
