@@ -12,28 +12,28 @@ public class Laptop_generator {
 
     static private int model;
     static public String[] cpu = new String[] {"INTEL", "AMD", "APPLE" };
-    static public float[] frequency = new float[] {3.3f, 3.5f, 4.5f };
-    static public int[] core = new int[] {4, 6, 12};
-    static public int[] ram = new int[] {4, 8, 16};
+    static public String[] frequency = new String[] {"3.3", "3.5", "4.5" };
+    static public String[] core = new String[] {"4", "6", "12"};
+    static public String[] ram = new String[] {"4", "8", "16"};
     static private String[] videCard = new String[] {"Nvidia GeForce RTX 3080","GeForce GT 415","Radeon HD 4225"};
-    static public int[] hdd = new int[] {120, 250, 920};
+    static public String[] hdd = new String[] {"120", "250", "920"};
     static public String[] screen = new String[] {"OLED","IPS","LED"};
     static public String[] os = new String[] {"Windows","Linux","MacOs"};
     static public String[] materials = new String[] {"Plastic","Metal","Hybrid"};
-    static public float[] weight = new float[] {1.2f, 2.1f, 3.6f};
+    static public String[] weight = new String[] {"1.2", "2.1", "3.6"};
 
     public static Laptop createLaptop (){
         int model0 = generateModel();
         String cpuO = cpu[randGen()];
-        float frequencyO = frequency[randGen()];
-        int coreO = core[randGen()];
-        int ramO = ram[randGen()];
+        String frequencyO = frequency[randGen()];
+        String coreO = core[randGen()];
+        String ramO = ram[randGen()];
         String videCardO = videCard[randGen()];
-        int hddO = hdd[randGen()];
+        String hddO = hdd[randGen()];
         String screenO = screen[randGen()];
         String osO = os[randGen()];
         String materialsO = materials[randGen()];
-        float weightO = weight[randGen()];
+        String weightO = weight[randGen()];
         Laptop exempLaptop = new Laptop(model0, cpuO,frequencyO,coreO,ramO,videCardO,hddO,screenO,osO,materialsO,weightO);
         return exempLaptop;
     }

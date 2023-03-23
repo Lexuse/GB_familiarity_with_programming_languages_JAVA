@@ -1,21 +1,19 @@
 package Seminar_6_HomeWork_task_1;
 
-import java.util.SplittableRandom;
-
 public class Laptop {
-    private int model;
-    private String cpu;
-    private float frequency;
-    private  int core;
-    private int ram;
-    private String videCard;
-    private int hdd;
-    private String screen;
-    private String os;
-    private String materials;
-    private float weight;
+    final int model;
+    final String cpu;
+    final String frequency;
+    final String core;
+    final String ram;
+    final String videCard;
+    final String hdd;
+    final String screen;
+    final String os;
+    final String materials;
+    final String weight;
 
-    public Laptop(int model ,String cpu, float frequency, int core, int ram, String videCard, int hdd,  String screen, String os, String materials, float weight){
+    public Laptop(int model ,String cpu, String frequency, String core, String ram, String videCard, String hdd,  String screen, String os, String materials, String weight){
         this.model = model;
         this.cpu = cpu;
         this.frequency = frequency;
