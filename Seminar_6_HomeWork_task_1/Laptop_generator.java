@@ -15,7 +15,7 @@ public class Laptop_generator {
     static public String[] frequency = new String[] {"3.3", "3.5", "4.5" };
     static public String[] core = new String[] {"4", "6", "12"};
     static public String[] ram = new String[] {"4", "8", "16"};
-    static private String[] videCard = new String[] {"Nvidia GeForce RTX 3080","GeForce GT 415","Radeon HD 4225"};
+    static private final String[] videoCard = new String[] {"Nvidia GeForce RTX 3080","GeForce GT 415","Radeon HD 4225"};
     static public String[] hdd = new String[] {"120", "250", "920"};
     static public String[] screen = new String[] {"OLED","IPS","LED"};
     static public String[] os = new String[] {"Windows","Linux","MacOs"};
@@ -28,7 +28,7 @@ public class Laptop_generator {
         String frequencyO = frequency[randGen()];
         String coreO = core[randGen()];
         String ramO = ram[randGen()];
-        String videCardO = videCard[randGen()];
+        String videCardO = videoCard[randGen()];
         String hddO = hdd[randGen()];
         String screenO = screen[randGen()];
         String osO = os[randGen()];
@@ -39,12 +39,12 @@ public class Laptop_generator {
     }
 
     public static int randGen(){
-        int result = new Random().nextInt(0,2);
+        int result = new Random().nextInt(0,3);
         return result;
     }
 
     public  static int generateModel(){
-        int result = new Random().nextInt(10001,19999);;
+        int result = new Random().nextInt(10001,19999);
         return result;
     }
 

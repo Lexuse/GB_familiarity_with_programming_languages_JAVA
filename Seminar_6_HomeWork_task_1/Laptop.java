@@ -39,6 +39,6 @@ public class Laptop {
                 "  Screen: " + screen + "\n" +
                 "  Operation System: " + os + "\n" +
                 "  Materials: " + materials + "\n" +
-                "  Weight: " + weight + " kilogram\n";
+                "  Weight: " + weight + " kg\n";
     }
 }
