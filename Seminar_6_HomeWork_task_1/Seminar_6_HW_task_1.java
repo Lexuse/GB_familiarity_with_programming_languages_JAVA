@@ -52,24 +52,26 @@ public class Seminar_6_HW_task_1 {
 
     public static void Choice(String message, String value){
         System.out.println(message);
-        String value1 = value;
-        for (int i = 0; i < Laptop_generator.cpu.length; i++) System.out.println(i + ": " + Laptop_generator.cpu[i]);
-        try {
-            choice = choice();
-        }
-        catch (Exception e){
-            System.out.println("Пункты меню выбора представлены числами а не символами!");
-            //Choice();
-        }
-        if(choice == 0 || choice == 1 || choice == 2) {
-            mapString.put(value1, Laptop_generator.cpu[choice]);
-        }
-        else {
-            System.out.println("Вы ввели несуществующий пункт выбора");
-            //cpuChoice();
-        }
-        for (Object entry: mapString.entrySet()) {
-            System.out.println(entry);
+        if (value.equals("cpu")){
+            for (int i = 0; i < Laptop_generator.cpu.length; i++) System.out.println(i + ": " + Laptop_generator.cpu[i]);
+                choice = choiceValue();
+                if(choice == 0 || choice == 1 || choice == 2) {
+                    mapString.put(value, Laptop_generator.cpu[choice]);
+            }
+            else {
+                System.out.println("Вы ввели несуществующий пункт выбора");
+                choiceValue();
+            }
+        }        if (value.equals("frequency")){
+            for (int i = 0; i < Laptop_generator.frequency.length; i++) System.out.println(i + ": " + Laptop_generator.frequency[i]);
+                choice = choiceValue();
+                if(choice == 0 || choice == 1 || choice == 2) {
+                    mapString.put(value, Laptop_generator.frequency[choice]);
+            }
+            else {
+                System.out.println("Вы ввели несуществующий пункт выбора");
+                choiceValue();
+            }
         }
         returnSetLaptop(mapString);
     }
@@ -97,8 +99,14 @@ public class Seminar_6_HW_task_1 {
         }
     }
 
-    private static byte choice() {
-        choice = Byte.parseByte(iScanner.next());
+    private static byte choiceValue() {
+        try {
+            choice = Byte.parseByte(iScanner.next());
+        }
+        catch (Exception e){
+            System.out.println("Пункты меню выбора представлены числами а не символами!");
+            choiceValue();
+        }
         return choice;
     }
 }
